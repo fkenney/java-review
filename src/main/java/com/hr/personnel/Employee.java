@@ -11,6 +11,11 @@ public class Employee {
 
   }
 
+  public Employee(String name, LocalDate date) {
+    this.setName(name);
+    this.setHireDate(date);
+  }
+
   public String getName() {
     return name;
   }
@@ -28,6 +33,6 @@ public class Employee {
   }
 
   public String getEmployeeInfo(){
-    return String.format("Name: %s , Hire Date:%s", getName(), getHireDate());
+    return String.format("Name: %s, Hire Date: %s", getName(), getHireDate());
   }
 }
